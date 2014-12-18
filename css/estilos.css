@@ -1,0 +1,37 @@
+/*
+    Document   : viasantina1/css/estilos．css
+    Created on : 2014-12-18 02:43 AM
+    Author     : sebabarr
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+body {
+    background:#A60522;
+    margin: 0 auto;
+}
+header {
+    background:red;
+}
+header figure img {
+    width:960px;
+    height:300px;
+    
+}
+footer {
+    background:yellowgreen;
+}
+nav {
+    background:blue;
+    border-radius:5px;
+    margin-bottom:2px;
+    margin-top:2px;
+}
+.caja-footer {
+    width:30%;
+    height:50px;    
+    float:left;
+    background:pink;
+    margin-right:2px;
+}
