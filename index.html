@@ -5,7 +5,28 @@ To change this template use Tools | Templates.
 <html lang="es">
 <head>
     <title>Via Santina , Moda Para Mujeres de Verdad!!</title>
+
+    
+    <script src="js/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Responsive viewport for smartphone devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- least.js 2 CSS file -->
+    
+    
     <link rel="stylesheet" href="css/estilos.css">
+    <script>
+        $(document).ready(function(){
+        $('.least-gallery').least();
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -16,25 +37,71 @@ To change this template use Tools | Templates.
     <nav>
         <ul>
             <li><a href=""/>Inicio</li>
+            <li><a href=""/>Nosotros</li>
             <li><a href=""/>Galeria</li>
             <li><a href=""/>Contacto</li>
-            <li><a href=""/>xxxxxxxx</li>
         </ul>
-    </nav>
-    <section>
-        <article>
-            aca jquery
+    </nav> 
+    <section id="contenido">
+        
+              <!-- Least Gallery -->
+        <article id="least">
+            
+        <!-- Least Gallery: Fullscreen Preview -->
+        <div class="least-preview"></div>
+                
+          <!-- Least Gallery: Thumbnails -->
+          <ul class="least-gallery">
+            <!-- 1th thumbnail -->
+                <li>
+                    <a href="media/big/01.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
+                      <img src="media/thumbnails/01.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                <li>    
+                    <a href="media/big/02.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
+                      <img src="media/thumbnails/02.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                <li>
+                    <a href="media/big/03.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
+                      <img src="media/thumbnails/03.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                <li>
+                    <a href="media/big/04.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
+                      <img src="media/thumbnails/04.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                <li>
+                    <a href="media/big/05.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
+                      <img src="media/thumbnails/05.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                <li>
+                    <a href="media/big/06.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
+                      <img src="media/thumbnails/06.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+              
+          </ul>
+          
         </article>
-        <article>
-            aca jquery
-        </article>
-        <article>
-            aca jquery
-        </article>
+    <!-- Least Gallery end -->
     </section>
+        <article id="galeria-secundaria">
+            <div class="fb-like-box" data-href="https://www.facebook.com/via.santina" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+        </article>
+    
     <footer>
         <div class="caja-footer">
-            aca redes sociales
+            <a href="https://www.facebook.com/via.santina" target=_blank>
+                <img src="img/facebook-square.svg" id="logof"></img>
+                </a>
+            <div id='fb-root'></div>
+            <div class="fb-like" data-href="https://facebook.com/via.santina" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            <div id='fb-root'></div>
+            <div class="fb-activity" data-site="http://www.facebook.com/via.santina" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
         </div>
         <div class="caja-footer">
             <p> Sucursal Galeria San Martin </p>
@@ -52,4 +119,9 @@ To change this template use Tools | Templates.
         </div>
     </footer>
 </body>
+ <!-- jQuery library -->
+  
+  <!-- least.js 2 library -->
+  <script src="js/libs/least/least.min.js"></script>
+
 </html>
